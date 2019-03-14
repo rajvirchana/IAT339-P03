@@ -1,0 +1,158 @@
+.main {
+    padding: 1em 5em;
+    flex: 75%;
+    flex-direction: row;
+}
+
+.component-row {
+    /*    display: flex;*/
+    /*    flex-wrap: wrap;*/
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    /*    text-align: center; */
+    /*    align-items: center;*/
+
+}
+
+.col-50 {
+    flex: 50%;
+    margin-top: 2em;
+    justify-content: center;
+}
+
+/* === Footer === */
+footer {
+    background-color: #38363B;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0em;
+    color: white;
+}
+
+.footer-col-30 {
+    flex: 33.3%;
+    padding: 2em;
+}
+
+.footer-col-25 {
+    flex: 25%;
+    padding: 1em;
+}
+
+.footer-section-title {
+    font-family: 'Avenir-Black', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer-address {
+    font-style: italic;
+}
+
+footer img {
+    display: inline;
+    height: 2em;
+    margin-right: 1em;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+/*About Us*/
+
+.about-me-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    justify-content: flex-start;
+}
+
+.about-me-spacing {
+    padding-left: 10em;
+}
+
+#about-us_quote h2 {
+    font-size: 1.2em;
+    font-style: italic;
+    text-align: center;
+}
+
+.aboutme-para {
+    padding: 0 5em 0 5em;
+}
+
+.aboutme-img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+@media (min-width: 769px) {
+
+    .header,
+    .navbar {
+        display: flex;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+
+        .header {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1150px;
+        }
+    }
+
+}
+
+@media (min-width: 1025px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (max-width: 1320px) {
+    .about-us-row {
+        flex-direction: column;
+    }
+
+    .about-me-order1 {
+        order: 2;
+    }
+
+    .about-me-order2 {
+        order: 1;
+    }
+
+    .about-me-spacing {
+        padding-left: 4em;
+    }
+
+    .about-me-spacing2 {
+        padding-left: 4em;
+    }
+
+    .about-me-img-spacing {
+        margin-left: -5em;
+    }
+
+/*
+    .project-row {
+        justify-content: center;
+    }
+*/
+}
